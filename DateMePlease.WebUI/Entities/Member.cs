@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.ModelBinding;
 
 namespace DateMePlease.WebUI.Entities
 {
@@ -16,5 +13,9 @@ namespace DateMePlease.WebUI.Entities
 		public DateTime Created { get; set; }
 
 		public Profile Profile { get; set; }
+
+		public ICollection<Message> Messages { get; set; }
+
+		public ICollection<Favorite> Favorites { get; set; }
 	}
 }
