@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace DateMePlease.WebUI.Entities
+namespace DateMePlease.DomainModel.Entities
 {
 	public class Photo
 	{

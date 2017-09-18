@@ -144,14 +144,6 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Entities\Demographics.cs" />
-    <Compile Include="Entities\Favorite.cs" />
-    <Compile Include="Entities\Interest.cs" />
-    <Compile Include="Entities\InterestType.cs" />
-    <Compile Include="Entities\Member.cs" />
-    <Compile Include="Entities\Message.cs" />
-    <Compile Include="Entities\Photo.cs" />
-    <Compile Include="Entities\Profile.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -180,7 +172,9 @@
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -209,8 +203,20 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DateMePlease.DomainModel\DateMePlease.DomainModel.csproj">
+      <Project>{c653e778-8a55-4ed4-9415-966dcd8ac6c4}</Project>
+      <Name>DateMePlease.DomainModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DateMePlease.EntityFramework\DateMePlease.EntityFramework.csproj">
+      <Project>{f205ebf4-4a9e-4c3f-815d-140929778551}</Project>
+      <Name>DateMePlease.EntityFramework</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

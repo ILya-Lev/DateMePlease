@@ -1,4 +1,4 @@
-﻿namespace DateMePlease.WebUI.Entities
+﻿namespace DateMePlease.DomainModel.Entities
 {
 	public class InterestType
 	{

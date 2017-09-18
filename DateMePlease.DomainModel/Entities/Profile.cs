@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace DateMePlease.WebUI.Entities
+namespace DateMePlease.DomainModel.Entities
 {
 	public class Profile
 	{
